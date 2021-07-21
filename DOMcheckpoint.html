@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2c4da964e0.js" crossorigin="anonymous"></script>/>
+    
+</head>
+
+
+<body>
+    <header class="entete">
+        <h1>Panier</h1>
+    </header>
+
+    <table class="table-articles"" cellspacing=" 0">
+        <thead class="thead-table-articles">
+            <tr class="entete-table-articles">
+                <th class="product-remove"></th>
+                <th class="product-thumbnail"></th>
+                <th class="product-name">Produit</th>
+                <th class="product-price">Prix</th>
+                <th class="product-quantity">Quantité</th>
+                <th class="product-subtotal">Sous-total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="product-remove"> <button style="border-radius: 50%;" type="button"
+                        class="btn btn-outline-danger remove">x</button> </td>
+
+                <td class="product-thumbnail">
+                    <a href="#"><img width="400" height="400"
+                            src="https://i0.wp.com/ideekor.tn/wp-content/uploads/2020/03/colonne_de_rangement-salle_de_bain-31.jpg?resize=400%2C400&amp;ssl=1"></a>
+                </td>
+
+                <td class="product-name"> <a href="#">Colonne de rangement SDB 8030</a> &nbsp;&nbsp;
+                    <button type="button" class="like"><i class="fas fa-heart "></i></button>
+                </td>
+
+                <td class="product-price">
+                    <span class="PrixU">145</span>
+                    &nbsp;<span>Dt</span>
+                </td>
+
+                <td class="product-quantity">
+                    <div class="quantity buttons_added">
+                        <button type="button" class="btn btn-outline-success minus">-</button>
+                        <input type="number" class="input-text qty text" step="1" min="0" max="" value="1"
+                            placeholder="" inputmode="numeric">
+                        <button type="button" class="btn btn-outline-success plus">+</button>
+
+                    </div>
+                </td>
+                <td class="product-subtotal">
+                    <span class="PrixT">145</span><span>&nbsp;Dt</span>
+                </td>
+            </tr>
+            <tr>
+
+                <td class="product-remove">
+                    <button type="button" style="border-radius: 50%;" class="btn btn-outline-danger remove">x</button>
+                </td>
+
+                <td class="product-thumbnail">
+                    <a href="#"></a><img width="400" height="400"
+                        src="https://i2.wp.com/ideekor.tn/wp-content/uploads/2020/04/organisateur-de-bureau-3.jpg?resize=400%2C400&amp;ssl=1"></a>
+                </td>
+
+                <td>
+                    <a href="#">Rangement de télécommande</a> &nbsp;&nbsp; 
+                    <button type="button" class="like"><i class="fas fa-heart"></i></button>                   
+                </td>
+
+                <td class="product-price">
+                    <span class="PrixU">32</span>&nbsp;<span>Dt</span>
+                </td>
+
+                <td class="product-quantity">
+                    <div class="quantity buttons_added">
+                        <button type="button" class="btn btn-outline-success minus">-</button>
+                        <input type="number" class="input-text qty text" step="1" min="0" max="" value="1"
+                            placeholder="" inputmode="numeric">
+                        <button type="button" class="btn btn-outline-success plus">+</button>
+                    </div>
+                </td>
+
+                <td class="product-subtotal">
+                    <span class="PrixT">32</span>&nbsp;<span>Dt</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6" class="actions">
+                    <button type="submit" class="refrech">Mettre à jour le panier</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <div class="container_totals ">
+<DIv class="total_panier">
+                       <h2>Total panier</h2>
+                
+                <div style="font-size:18pt; font-weight: 400;" ><span class="PT">177</span> &nbsp;<span>Dt</span> </div> 
+</DIv>
+
+
+        <div class="Valider">
+            <button>Valider la commande</button>
+        </div>
+    </div>
+
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>
